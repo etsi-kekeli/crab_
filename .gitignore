@@ -1,2 +1,3 @@
-data/images/*
-data/labels/*
+images/*
+__pycache__
+data/*

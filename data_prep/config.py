@@ -1,0 +1,2 @@
+TARGET_CLASS="Crab"
+CLASS_ID="/m/0n28_"

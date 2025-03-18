@@ -1,6 +1,7 @@
 import os
+import config
 
-crab_id = '/m/0n28_'
+target_id = config.CLASS_ID
 
 train_bboxes_filename = os.path.join('data_prep', 'oidv6-train-annotations-bbox.csv')
 validation_bboxes_filename = os.path.join('data_prep', 'validation-annotations-bbox.csv')
@@ -15,7 +16,7 @@ for j, filename in enumerate([train_bboxes_filename, validation_bboxes_filename,
         line = f.readline()
         while len(line) != 0:
             id, _, class_name, *_ = line.split(',')[:13]
-            if class_name in [crab_id] and id not in image_list_file_list:
+            if class_name in [target_id] and id not in image_list_file_list:
                 image_list_file_list.append(id)
                 with open(image_list_file_path, 'a') as fw:
                     fw.write('{}/{}\n'.format(['train', 'validation', 'test'][j], id))
