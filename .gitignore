@@ -1,3 +1,6 @@
+crabs.db
+
 images/*
 __pycache__
 data/*
+runs

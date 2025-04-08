@@ -1,0 +1,7 @@
+path: /home/yao/Documents/programmes/Projets/crab_counter/data
+train: images/train
+val: images/train
+
+# Classes
+names:
+  0: crab
